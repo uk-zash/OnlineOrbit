@@ -1,0 +1,94 @@
+<!-- views/footer.ejs -->
+<style>
+  /* Add your existing styles here */
+
+.copy-text {
+  /* Add your styles for the text to be copied here */
+  cursor: pointer;
+}
+
+.copy-popup {
+  /* Add styles for the copy popup here */
+  position: absolute;
+  background-color: #4CAF50;
+  /* bottom:0; */
+  color: black;
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 1999;
+}
+
+</style>
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/privacy" >Privacy Policy</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Connect with Us</h3>
+      <ul>
+        <li><a style="display: flex;
+            align-items: center;
+            gap: 8px;" href="https://www.facebook.com/profile.php?id=61555483784827" target="_blank"><img style="filter: invert(1);
+    width: 6%;" src="/img/facebook.svg" alt="">Facebook</a></li>
+        <li><a style="display: flex;
+            align-items: center;
+            gap: 8px;" href="https://www.instagram.com/onlineorbitt/" target="_blank"><img style="filter: invert(1);
+    width: 6%;" src="/img/insta.svg" alt="">Instagram</a></li>
+        <li><a style="display: flex;
+            align-items: center;
+            gap: 8px;" href="https://www.telegram.com/" target="_blank"><img style="filter: invert(1);
+    width: 6%;" src="/img/telegramm.svg" alt="">Telegram</a></li>
+        
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Information</h3>
+      <p>onlineorbitt@gmail.com</p>
+      <p  class="copy-text" onclick="copyToClipboard(this)">+91-9517173413</p>
+      <p  class="copy-text" onclick="copyToClipboard(this)">+91-9129310477</p>
+      <!-- Add more contact information as needed -->
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center;">"© OnlineOrbitt.com 2024 |  All rights reserved."</div>
+</footer>
+<script>
+function copyToClipboard(element) {
+  const textToCopy = element.innerText;
+
+  navigator.clipboard.writeText(textToCopy).then(function() {
+    // Success callback
+    showCopyPopup(element);
+  }, function() {
+    // Error callback
+    console.error('Unable to copy text to clipboard');
+  });
+}
+
+function showCopyPopup(element) {
+  const popup = document.createElement('div');
+  popup.className = 'copy-popup';
+  popup.innerText = 'Copied!';
+  
+  // Append popup to the body
+  document.body.appendChild(popup);
+
+  // Position the popup near the copied element
+  const rect = element.getBoundingClientRect();
+  popup.style.top = window.scrollY + rect.top + 'px';  // Use window.scrollY
+  popup.style.left = rect.left + 'px';
+
+  // Remove the popup after a short delay
+  setTimeout(function() {
+    document.body.removeChild(popup);
+  }, 1500);
+}
+
+</script>

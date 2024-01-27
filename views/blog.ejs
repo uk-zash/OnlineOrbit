@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style/app-dev.css">
+    <title>Blogs</title>
+    <style>
+        body {
+            position: relative;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background: #00c4cc;
+        }
+
+        .add-new {
+            display: block;
+            position: absolute;
+            right: 14px;
+            margin-top: 1rem;
+        }
+
+        button a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .card {
+            text-overflow: ellipsis;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 270px;
+            max-height: 54vh;
+            position: relative;
+            margin: 5rem 2rem;
+            /* width: 20%; */
+            border: 3px solid #375f68;
+        }
+
+        .card-btn {
+            position: absolute;
+            background-color: #2eff00;
+            bottom: 0;
+            right: 0;
+            margin-bottom: 3px;
+            margin-right: 3px;
+        }
+
+        .card img {
+            width: 100%;
+            /* border-bottom: 2px solid black; */
+            object-fit: cover;
+            object-position: center;
+            height: 100%;
+            /* padding: 13px; */
+        }
+
+        .card h5,
+        p {
+            padding: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-body {
+            background: #ffffff;
+        }
+
+        .content {
+            padding: 20px;
+            margin-right: 100px;
+            /* Adjust margin-right based on the width of your social icons */
+        }
+
+        .social-icons {
+            position: fixed;
+            top: 60%;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin-bottom: 10px;
+            text-decoration: none;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            opacity: 0.4;
+            /* transform: scale(2); */
+        }
+
+        .social-icons img {
+            width: 40px;
+            /* Adjust the width of your social icons */
+            height: auto;
+        }
+        .add-new a{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('layout', { pageTitle: 'Home', enquiryNumber: 'Your Enquiry Number', phoneNumber: 'Your Phone Number' }) %>
+
+
+
+        <button class="add-new"><a href="/blog1">Add new Blog</a></button>
+        <div class="container">
+            <% Blogs.forEach(e=> { %>
+                <div class="card">
+                    <div class="box" style="flex-grow: 1; overflow: hidden; border-bottom: 2px solid black;">
+                        <img src="<%= e.coverImageURL %>" alt="image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= e.title %>
+                        </h5>
+                        <p class="card-text">
+                            Author: <%= e.createdBy %>
+                        </p>
+                        <p><button class="card-btn"><a href="/blog/<%= e._id %>">View</a></button></p>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+        <div class="social-icons">
+            <a href="https://whatsapp.com/channel/0029VaLiRFzA89MnjT9O7A0d" target="_blank"><img src="/img/whatsapp.png"
+                    alt="Social Media 1"></a>
+            <a href="https://t.me/OnlineOrbitt" target="_blank"><img src="/img/telegram.png"
+                    alt="Social Media 2"></a>
+            <a href="https://www.facebook.com/profile.php?id=61555483784827" target="_blank"><img src="/img/facebook.png"
+                    alt="Social Media 3"></a>
+            <a href="https://www.instagram.com/onlineorbitt/" target="_blank"><img src="/img/instagram.png"
+                    alt="Social Media 3"></a>
+        </div>
+
+
+
+
+
+
+        <%- include('footer') %>
+
+</body>
+
+</html>

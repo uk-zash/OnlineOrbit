@@ -1,0 +1,145 @@
+<!-- header.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/header.css"> <!-- Add a separate CSS file for styling -->
+  <title>Header</title>
+</head>
+<body>
+
+  <div class="container1">
+    <div class="contact-info">
+      <h4>onlineorbitt@gmail.com</h4>
+    
+      <h4 class="copy-text" onclick="copyToClipboard(this)">+91 9517173413</h4>
+    </div>
+    <div class="head-btn">
+      <button><a style="text-decoration: none; color: black;" href="/contact">Enquiry</a></button>
+      <button style="color: black;">24/7 Support</button>
+    </div>
+  </div>
+  <div class="container2">
+    <img src="/img/final-logo.png" alt="Logo">
+    <div class="burger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="nav-links">
+      <li><a class="home" href="/">Home</a></li>
+      
+      <li class="dropdown">
+        <a href="#" >Services</a>
+        <div class="dropdown-content">
+          <div class="padd drop-down-cont1">
+            <div class="heading">App Development</div>
+            <div class="links">
+              <a href="/app-dev">Grocery App</a>
+              <a href="/app-dev">Restaurant App</a>
+              <a href="/app-dev">Online Delivery App</a>
+              <a href="/app-dev">Online Booking platforms</a>
+
+              
+            </div>
+        </div>
+          
+          <div class="drop-down-cont1">
+            <div class="heading">Web Development</div>
+            <div class="links">
+              <a href="/web-dev">Custom Website Design</a>
+              <a href="/web-dev">WordPress Website Design</a>
+              <a href="/web-dev">eCommerce Web Design</a>
+              <a href="/web-dev">Website Hosting</a>
+              
+             
+            </div>
+        </div>
+          
+          <div class="drop-down-cont1">
+            <div class="heading">Digital Marketing</div>
+            <div class="links">
+              <a href="/dig-mark">Marketing Strategy</a>
+              <a href="/dig-mark">SEM</a>
+              <a href="/dig-mark">SEO</a>
+              <a href="/dig-mark">Local SEO</a>
+              <a href="/dig-mark">Technical SEO</a>
+              
+              <a href="/dig-mark">PPC Marketing</a>
+              <a href="/dig-mark">Google Analytic Services</a>
+              <a href="/dig-mark">White Label Services</a>
+              
+              
+            </div>
+        </div>
+          <div class="drop-down-cont1">
+            <div class="heading">Social Media</div>
+            <div class="links">
+              <a href="/dig-mark">Social Media Management</a>
+              <a href="/dig-mark">Social Media Advertising</a>
+              <a href="/dig-mark">Brand Management</a>
+              <a href="/dig-mark">Social Media Handling</a>
+              <a href="/dig-mark">Posts Making</a>
+              <a href="/dig-mark">Social Media Reels</a>
+              <h2>Other Services</h2>
+              <a href="/dig-mark">Railway Tickets</a>
+              <a href="/dig-mark">Flights Tickets</a>
+              <a href="/dig-mark">Poster Making</a>
+              <a href="/dig-mark">Logo Design</a>
+              <a href="/dig-mark">Voice over</a>
+              
+            </div>
+        </div>
+          
+        </div>
+        <li><a href="/blog">Blogs</a></li>
+      </li>
+      <li class="dropdown">
+        <a href="/aboutus">About Us</a>
+        <!-- <div class="cont-2 dropdown-content">
+          <a href="/about">About us</a>
+          <a href="/faq">FAQ</a>
+        </div> -->
+      </li>
+    </ul>
+  </div>
+
+  <script src="/scripts/nav.js"></script>
+  <script>
+    function copyToClipboard(element) {
+      const textToCopy = element.innerText;
+    
+      navigator.clipboard.writeText(textToCopy).then(function() {
+        // Success callback
+        showCopyPopup(element);
+      }, function() {
+        // Error callback
+        console.error('Unable to copy text to clipboard');
+      });
+    }
+    
+    function showCopyPopup(element) {
+      const popup = document.createElement('div');
+      popup.className = 'copy-popup';
+      popup.innerText = 'Copied!';
+      
+      // Append popup to the body
+      document.body.appendChild(popup);
+    
+      // Position the popup near the copied element
+      const rect = element.getBoundingClientRect();
+      popup.style.top = window.scrollY + rect.top + 'px';  // Use window.scrollY
+      popup.style.left = rect.left + 'px';
+    
+      // Remove the popup after a short delay
+      setTimeout(function() {
+        document.body.removeChild(popup);
+      }, 1500);
+    }
+    
+    </script>
+ 
+</body>
+</html>

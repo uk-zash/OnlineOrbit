@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content {
+  padding: 20px;
+  margin-right: 100px; /* Adjust margin-right based on the width of your social icons */
+}
+
+.social-icons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  opacity: 0.4;
+  /* transform: scale(2); */
+}
+
+.social-icons img {
+  width: 40px; /* Adjust the width of your social icons */
+  height: auto;
+}
+
+
+
+/* Slideshow container */
+/* .slideshow-container {
+  max-width: 1000px;
+  max-height: 1000px;
+  position: relative;
+  margin: auto;
+  height: 400px;
+} */
+/* .slideshow-container .mySlides img{
+width: 100%;
+
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+} */
+
+/* Hide the images by default */
+/* .mySlides {
+  display: none;
+  height: 100%; 
+} */
+
+/* Caption text */
+.slideshow-container .img{
+    position: relative;
+}
+.slideshow-container .img img{
+  aspect-ratio: 7/3;
+  /* border:2px solid black; */
+  /* border-image: fill 0 linear-gradient(#0001 , #000); */
+}
+.slideshow-container .img .write{
+    position: absolute;
+    left: 0;
+    bottom: 6rem;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 65px;
+  bottom: 6rem;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  position: absolute;
+    left: 65px;
+    bottom: 6rem;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+   
+.work{
+    display: flex;
+    gap: 28px;
+    padding: 43px;
+    align-items: center;
+}
+.work img{
+  height: 92vh;
+    width: 318vw;
+    aspect-ratio: 3/3;
+}
+.aboutO{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: start;
+    max-height:auto;
+    /* padding: 0rem 2rem 0rem 0rem; */
+    max-width: 50%;
+ }
+ .aboutO h2, p{
+  text-align: start;
+ }
+ 
+
+/* .what-we-do img{
+    width: 99.9vw;
+    position: relative;
+    aspect-ratio: 7/3;
+}
+.slideshow-container .img img{
+  aspect-ratio: 7/3;
+}
+.what-we-do .content{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 11rem;
+    left: 26rem;
+    flex-direction: column;
+    gap: 23px;
+  
+
+} */
+
+ /* .what-we-do {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+section::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/bg1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; 
+    z-index: -1; 
+  }
+  
+  .what-we-do .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%; 
+    max-width: 600px; 
+  }
+
+  @media only screen and (max-width: 768px) {
+    .what-we-do .content {
+      max-width: 80%; 
+    }
+  } */
+  /* .what-we-do {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .what-we-do::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/img/bg1.jpg"); 
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9; 
+    z-index: -1; 
+  }
+  .what-we-do .content{
+    font-size: 4em;
+  } */
+
+  
+  .what-we-do{
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set the desired height */
+    background-image: url('/img/bg1.jpg'); /* Set the path to your image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    color: rgb(20, 16, 16); /* Text color for content */
+    text-align: center; /* Center-align the content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .what-we-do .content {
+    /* background-color: rgba(0, 0, 0, 0.7); Semi-transparent background color for better readability */
+    padding: 20px;
+    max-width: 80%; /* Set the maximum width of the content */
+  }
+  .what-we-do .content p{
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  @media only screen and (max-width: 753px) {
+    .work {
+      flex-direction: column; /* Stack images vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .work img {
+      width: 100%; /* Make images fill the container width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .aboutO {
+ /* Adjust padding for smaller screens */
+      max-width: 100%; /* Allow content to take full width on smaller screens */
+      text-align: center; /* Center-align the content on smaller screens */
+    }
+  }
+  @media only screen and (max-width: 753px){
+    .slideshow-container .img img{
+      aspect-ratio: 3/3;
+    }
+  }
+ 
+  
+  /* Add this to your existing styles or create a new style block */
+.card-container {
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 665px){
+  .card-container{
+    gap: 2rem;
+  }
+}
+.card {
+  width: 290px;
+  height: 395px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  backface-visibility: hidden;
+  box-shadow: 23px 21px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+.card-front {
+  background-color: #3498db;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-front h2{
+  padding-top: 9px;
+}
+.card-front img{
+  width: 63%;
+  padding: 1rem;
+}
+.card-front p{
+  padding: 1rem 1rem 2rem 2rem;
+}
+
+.card-back {
+  background-color: #1abcaa;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  transform: rotateY(180deg);
+  gap: 8px;
+  padding: 1rem 1rem 1rem 3rem;
+}
+/* Add this to your existing styles or create a new style block */
+.card-back ul{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 14px;
+}
+.review-container {
+  width: 100%;
+  background-color: #4490d6;
+  overflow: hidden;
+  position: relative;
+}
+
+.reviews {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.review p{
+  padding-left: 10px;
+}
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-container {
+  margin-top: 30px;
+  display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #e0e0e0;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+}
+
+.show-answer {
+  display: block;
+}
+
+.faq-container h2{
+  width: 100%;
+    text-align: center;
+    padding: 2rem 
+}
+.faq-container p{
+  font-size: 1.1em;
+}
+
+@media only screen and (max-width:1000px){
+  .work{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .aboutO h2{
+    font-size: 1.2em;
+    padding-left: 9px;
+   }
+   .aboutO p{
+  
+    padding-left: 17px;
+   }
+  .aboutO{
+    max-width: 100%;
+    align-items: start;
+  
+  }
+  .work img{
+    height: auto;
+    width: 100%;
+  }
+}
+

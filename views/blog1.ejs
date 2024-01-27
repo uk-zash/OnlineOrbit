@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style/app-dev.css">
+    <title>Blog</title>
+    <style>
+        
+.content {
+    padding: 20px;
+    margin-right: 100px; /* Adjust margin-right based on the width of your social icons */
+  }
+  
+  .social-icons {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    opacity: 0.4;
+    /* transform: scale(2); */
+  }
+  
+  .social-icons img {
+    width: 40px; /* Adjust the width of your social icons */
+    height: auto;
+  }
+    </style>
+</head>
+<body>
+    <%- include('layout', { pageTitle: 'Home', enquiryNumber: 'Your Enquiry Number', phoneNumber: 'Your Phone Number' }) %>
+
+    
+    <div class="container">
+        <form style="padding: 2rem; border: none;" action="/blog1" method="post" enctype = "multipart/form-data">
+            <div class="input">
+            <label for="coverImage" class="form-label
+            ">Cover Image</label>
+            <input type="file" class="form-input" id="coverImage" name="coverImage" />
+        </div>
+            <div class="input">
+            <label for="title" class="form-label
+            ">Title</label>
+            <input type="text" class="form-input" id="title" name="title" />
+        </div>
+            <div class="input">
+            <label for="body" class="form-label
+            ">Body</label>
+           <textarea name="body" id="body" cols="30" rows="10" placeholder="Write your blog here"></textarea>
+           <div class="input">
+            <label for="writer" class="form-label
+            ">Written By</label>
+            <input type="text" class="form-input" id="createdBy" name="createdBy" />
+        </div>
+            <div class="input">
+           <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        </form>
+    </div>
+    <div class="social-icons">
+      <a href="https://whatsapp.com/channel/0029VaLiRFzA89MnjT9O7A0d" target="_blank"><img src="/img/whatsapp.png"
+              alt="Social Media 1"></a>
+      <a href="https://t.me/OnlineOrbitt" target="_blank"><img src="/img/telegram.png"
+              alt="Social Media 2"></a>
+      <a href="https://www.facebook.com/profile.php?id=61555483784827" target="_blank"><img src="/img/facebook.png"
+              alt="Social Media 3"></a>
+      <a href="https://www.instagram.com/onlineorbitt/" target="_blank"><img src="/img/instagram.png"
+              alt="Social Media 3"></a>
+  </div>
+
+
+
+
+    <%- include('footer') %>
+
+</body>
+</html>

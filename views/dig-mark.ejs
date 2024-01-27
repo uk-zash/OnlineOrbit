@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style/app-dev.css">
+    <title>Digital Marketing</title>
+</head>
+<body>
+    <%- include('layout', { pageTitle: 'Home', enquiryNumber: 'Your Enquiry Number', phoneNumber: 'Your Phone Number' }) %>
+
+    <div class="contact-container">
+        <div class="about">
+            <h2>Digital Marketing Services</h2>
+            <p>OnlineOrbitt's expert team provides digital marketing solutions to grow your business and ideas. We master social media platforms and ad campaigns to get you noticed and attract more customers.
+            </p>
+        </div>
+        <div class="form-container">
+            <form action="/contact" method="post">
+                <input type="text" id="name" name="name" required placeholder="Full Name">
+
+                <div class="flex-container">
+
+                    <div class="flex-item">
+
+                        <input type="tel" id="number" name="number" required placeholder="Mobile Number">
+                    </div>
+                </div>
+
+
+                <input type="email" id="email" name="email" required placeholder="Email">
+
+
+                <textarea id="message" name="message" rows="4" required
+                    placeholder="Write your Message here"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="contact-container" style="background-color: white;">
+        <div class="form-container">
+            <img style="max-width: 100%;" src="/img/digii.jpg" alt="">
+     </div>
+        <div class="about" style="color: black;">
+            <h2>What is Digital Marketing.</h2>
+            <p>Using electronic devices in marketing to buy and sell any product and service conveys messages to your customer and measures throughout the customer journey. Particularly, Digital Marketing refers to the Online Marketing Campaign to reach out to specific customers via their gadgets like Mobile, tablets and computers etc.</p> <p> It consists of Search Engine Optimizing (SEO), Search Engine Marketing, Social Media Marketing (SMM) and brand awareness, Content marketing, Email Marketing, Affiliate Marketing etc. It has many forms like Online Videos and display ads on social media platforms. </p><p>Nowadays, digital marketing is highly demanded as compared to traditional marketing around the globe. Strategically, digital marketing helps you to find out interested customers and it helps you to retarget them easily by promoting specific businesses and Ideas.</p>
+        </div>
+        
+</div>
+
+<section class="mobile-app-process">
+    <div class="process-heading">
+        <h2>Advantages of Digital Marketing</h2>
+           <p>Social media in digital marketing: Engage, build loyalty, generate leads – all in real-time.</p>
+        
+    </div>
+
+    <div class="process-cards">
+        <!-- Card 1 - Information Gathering -->
+        <div class="process-card">
+            <img src="/img/seo.png" alt="">
+            <h3>Search Engine Optimization (SEO)</h3>
+           <p>With our advanced SEO techniques and services, you will be able to increase your online visibility and drive more relevant traffic to your business website.</p>
+        </div>
+
+        <!-- Card 2 - Wireframing -->
+        <div class="process-card">
+            <img src="/img/dig-mark.png" alt="">
+            <h3>Social Media Marketing</h3>
+            <p>Connect with your target audience more effectively and increase brand awareness with our powerful social media marketing solutions.</p>
+        </div>
+
+        <!-- Card 3 - Design -->
+        <div class="process-card">
+            <img src="/img/tap.png" alt="">
+            <h3>Pay-Per-Click</h3>
+            <p>You can increase your revenue and grow your business with our expertly crafted and result-oriented PPC ads designed for your brand.</p>
+        </div>
+
+        <!-- Card 4 - Development -->
+        <div class="process-card">
+            <img src="/img/ads.png" alt="">
+            <h3>Display Advertising</h3>
+            <p>Placing your brand on the right page can help you get the most attention online. Having your brand all over the place.</p>
+        </div>
+
+        <!-- Card 5 - Quality Assurance -->
+        <div class="process-card">
+            <img src="/img/graphic.png" alt="">
+            <h3>Graphic Design</h3>
+            <p>Graphic design communicates visually, combining creativity and technology. It transforms ideas into compelling visuals, enhancing communication, brand identity, and user experience across various mediums.</p>
+        </div>
+
+        <!-- Card 6 - Support & Maintenance -->
+        <div class="process-card">
+            <img src="/img/logo11.png" alt="">
+            <h3>Logo Design</h3>
+            <p>Logo design is like a tiny ambassador for a brand. It's a small, powerful symbol that speaks volumes about the business, making it easily recognizable and memorable.</p>
+        </div>
+    </div>
+</section>
+
+ <!-- Get In Touch Card -->
+ <div class="get-in-touch-card">
+    <div class="get-card">
+    <h2>Get In Touch</h2>
+    <p>We'd love to hear what you have to say. The online support team at OnlineOrbitt are always ready to give you the best customer service.</p>
+</div>
+<div class="contact-buttons">
+    <button class="telegram-button"><a href="https://t.me/OnlineOrbitt" style="color:white; text-decoration: none;" target="_blank">Telegram </a></button>
+    <button class="whatsapp-button" style="background-color: #25d366;" > <a style="text-decoration: none; color: white;" href="https://whatsapp.com/channel/0029VaLiRFzA89MnjT9O7A0d" target="_blank">Whatsapp</a> </button>
+</div>
+</div>
+<div class="contact-container" style="background-color: white;">
+    <div class="about" style="color: black;">
+        <h2>Why Digital Marketing Is Best For Your Brand</h2>
+        <p>In this digital world growing a business has become very hard due to many competitors in the market. Avoiding traditional marketing people intend to use Digital marketing to reach a global audience and grow business through various channels.</p> <p> Digital marketing is easier and cheaper than the traditional one. A person can easily collect data on his interested customers to target them again and again. Digital marketing provides tools and analytics that allow businesses to measure the effectiveness of their campaigns in real time.</p> <p> Through social media platforms, a person can engage with his audience and build strong relationships through fostering brand loyalty and generating leads.
+            In summary, digital marketing is essential for businesses seeking to stay competitive in the modern marketplace. It offers a cost-effective, measurable, and adaptable approach to reaching and engaging with a global audience.</p>
+    </div>
+    <div class="form-container">
+       <img style="max-width: 100%;" src="/img/digi3.jpg" alt="">
+</div>
+</div>
+<div class="social-icons">
+    <a href="https://your-social-media-link1" target="_blank"><img src="/img/whatsapp.png" alt="Social Media 1"></a>
+    <a href="https://your-social-media-link2" target="_blank"><img src="/img/telegram.png" alt="Social Media 2"></a>
+    <a href="https://your-social-media-link3" target="_blank"><img src="/img/facebook.png" alt="Social Media 3"></a>
+    <a href="https://your-social-media-link3" target="_blank"><img src="/img/instagram.png" alt="Social Media 3"></a>
+  </div>
+
+
+
+
+
+
+
+    <%- include('footer') %>
+
+</body>
+</html>

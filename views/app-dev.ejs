@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style/app-dev.css">
+    <title>App Development</title>
+</head>
+<body>
+    <%- include('layout', { pageTitle: 'Home', enquiryNumber: 'Your Enquiry Number', phoneNumber: 'Your Phone Number' }) %>
+
+    <div class="contact-container" style="color: white">
+        <div class="about">
+            <h2>iOS and Android Applications Development</h2>
+            <p>From innovative startups to established brands, OnlineOrbitt creates custom apps that engage users and give results to more customers.
+            </p>
+        </div>
+        <div class="form-container">
+            <form onsubmit="sendEmail()" action="/contact"   method="post" >
+                <input type="text" id="name" name="name" required placeholder="Full Name">
+
+                <div class="flex-container">
+
+                    <div class="flex-item">
+
+                        <input type="tel" id="number" name="number" required placeholder="Mobile Number">
+                    </div>
+                </div>
+
+
+                <input type="email" id="email" name="email" required placeholder="Email">
+
+
+                <textarea id="message" name="message" rows="4" required
+                    placeholder="Write your Message here"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="contact-container" style="background-color: white;">
+        <div class="form-container">
+            <img style="max-width: 100%;" src="/img/img13.jpg" alt="">
+     </div>
+        <div class="about" style="color: black;">
+            <h2>What Is Mobile Application?</h2>
+            <p>A mobile app is custom software for smartphones and tablets, downloaded from stores like Apple App Store or Google Playstore. Tailored for specific platforms (iOS, Android), these apps optimize user interfaces for smaller screens, work offline, and utilize device features.</p>
+               <p> Distributed through official stores, they cover diverse categories like social media, productivity, and gaming, providing a convenient way to access information and services on the go.</p>
+        </div>
+        
+</div>
+
+<section class="mobile-app-process">
+    <div class="process-heading">
+        <h2>Our Mobile Applications Development Process</h2>
+        <p> We create unique mobile applications that provide a smooth and intuitive user experience.</p>
+    </div>
+
+    <div class="process-cards">
+        <!-- Card 1 - Information Gathering -->
+        <div class="process-card">
+            <img src="/img/info.png" alt="">
+            <h3>Information Gathering</h3>
+            <p>To ensure that our approach aligns with our client's needs, we begin by understanding their specific business needs.</p>
+        </div>
+
+        <!-- Card 2 - Wireframing -->
+        <div class="process-card">
+
+            <img src="/img/wireframe.png" alt="">
+            <h3>Wireframing</h3>
+            <p>We create an in-depth app wireframe that includes platform details, feature needs, and usability considerations for your businesses.</p>
+        </div>
+
+        <!-- Card 3 - Design -->
+        <div class="process-card">
+            <img src="/img/design.png" alt="">
+            <h3>Design</h3>
+            <p>Our experienced team starts designing an exciting user experience for the application. To meet the needs of the client we create static mockups of different screens.</p>
+        </div>
+
+        <!-- Card 4 - Development -->
+        <div class="process-card">
+            <img src="/img/develop.png" alt="">
+            <h3>Development</h3>
+            <p>Our programmers and architects put in a lot of effort to create reliable and high-quality applications. We keep our customers by utilizing the app development process.</p>
+        </div>
+
+        <!-- Card 5 - Quality Assurance -->
+        <div class="process-card">
+            <img src="/img/quality.png" alt="">
+            <h3>Quality Assurance</h3>
+            <p>Our high-quality testing methods thoroughly analyze every element of quality to deliver an exceptional product. All of our outputs are fully functional.</p>
+        </div>
+
+        <!-- Card 6 - Support & Maintenance -->
+        <div class="process-card">
+            <img src="/img/support.png" alt="">
+            <h3>Support & Maintenance</h3>
+            <p>We collaborate closely with our customers to provide full support and maintenance even after the launch of the app, and we work hard to add new functionalities as the app evolves.</p>
+        </div>
+    </div>
+</section>
+
+ <!-- Get In Touch Card -->
+ <div class="get-in-touch-card">
+    <div class="get-card">
+    <h2>Get In Touch</h2>
+    <p>We'd love to hear what you have to say. The online support team at OnlineOrbitt are always ready to give you the best customer service.</p>
+</div>
+<div class="contact-buttons">
+    <button class="telegram-button"><a href="https://t.me/OnlineOrbitt" style="color:white; text-decoration: none;" target="_blank">Telegram </a></button>
+    <button class="whatsapp-button" style="background-color: #25d366;" > <a style="text-decoration: none; color: white;" href="https://whatsapp.com/channel/0029VaLiRFzA89MnjT9O7A0d" target="_blank">Whatsapp</a> </button>
+</div>
+</div>
+<div class="contact-container" style="background-color: white; ">
+    
+    <div class="about" style="color: black;">
+        <h2>Building For A Mobile Platform</h2>
+        <p>At OnlineOrbitt, we embark on the exciting journey of crafting mobile platforms that transcend expectations. Our approach blends innovation and expertise to construct a digital realm where seamless user experiences are born. From envisioning the architecture to refining the user interface, we meticulously sculpt mobile platforms that redefine connectivity.</p>
+            <p>
+             With a commitment to cutting-edge technology and user-centric design, we strive to create an ecosystem that not only meets but exceeds the dynamic needs of our clients. Join us as we pave the way for a future where your digital presence thrives on the unparalleled functionality and aesthetic appeal of a meticulously designed mobile platform.</p>
+    </div>
+    <div class="form-container">
+        <img style="max-width: 100%;" src="/img/phonee.svg" alt="">
+ </div>
+    
+</div>
+
+
+<div class="social-icons">
+    <a href="https://whatsapp.com/channel/0029VaLiRFzA89MnjT9O7A0d" target="_blank"><img src="/img/whatsapp.png"
+            alt="Social Media 1"></a>
+    <a href="https://t.me/OnlineOrbitt" target="_blank"><img src="/img/telegram.png"
+            alt="Social Media 2"></a>
+    <a href="https://www.facebook.com/profile.php?id=61555483784827" target="_blank"><img src="/img/facebook.png"
+            alt="Social Media 3"></a>
+    <a href="https://www.instagram.com/onlineorbitt/" target="_blank"><img src="/img/instagram.png"
+            alt="Social Media 3"></a>
+</div>
+
+
+
+
+
+
+
+    <%- include('footer') %>
+
+    <script src="/scripts/contact.js"></script>
+
+
+
+</body>
+</html>

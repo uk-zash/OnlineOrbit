@@ -1,0 +1,292 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    padding: 20px;
+    margin-right: 100px; /* Adjust margin-right based on the width of your social icons */
+  }
+  
+  .social-icons {
+    position: fixed;
+    top: 60%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    opacity: 0.4;
+    /* transform: scale(2); */
+  }
+  
+  .social-icons img {
+    width: 40px; /* Adjust the width of your social icons */
+    height: auto;
+  }
+
+.contact-container{
+    display: flex;
+    padding: 4rem;
+ 
+    font-size: 1.2em;
+    align-items: center;
+    background: #00c4cc;
+    justify-content: space-between;
+}
+.about{
+    width: 45%;
+    color: white;
+    /* padding: 1rem 1rem 4rem 1rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.contact-container .p{
+    color: black;
+    /* font-size: 0.9em; */
+}
+form{
+    width: 100%;
+    border: 15px solid black;
+    padding: 1rem;
+}
+.form-container {
+    width: 45%;
+    /* padding: 1rem; */
+    /* margin-left: 6rem; */
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  select {
+    appearance: none;
+    background: url('flag-india.png') no-repeat right center;
+    background-size: 30px;
+  }
+  textarea {
+    resize: vertical;
+  }
+  .flex-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .flex-item {
+    flex: 1;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Add this to your existing styles or create a new style block */
+
+.mobile-app-process {
+    background-color: #e1dede;
+    padding: 4vh 5vw;
+}
+
+.process-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-size: 1.3em;
+}
+
+.process-heading h2 {
+    color: #333;
+}
+
+.process-heading p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+.process-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.process-card {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.process-card img{
+    width: 40%;
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+}
+
+.process-card h3 {
+    color: #3498db;
+}
+
+.process-card p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Add media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .process-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .process-card {
+        width: calc(100% - 20px);
+    }
+}
+
+
+
+.get-in-touch-card {
+    background-color: #00acac;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem 6rem 1rem 6rem;
+    /* text-align: center; */
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    gap: 85px;
+    align-items: center;
+}
+.get-in-touch-card .get-card{
+    width: 66%;
+    text-align: left;
+    padding: 1rem 1rem 0rem 2rem;
+}
+
+.get-in-touch-card h2 {
+    color:white;
+}
+
+.get-in-touch-card p {
+    color:white;
+    margin-bottom: 20px;
+}
+
+.contact-buttons {
+    
+    width: 41%;
+    display: flex;
+    gap: 2rem;
+
+}
+
+.contact-buttons button {
+    background-color: #006cb5;
+    color: #fff;
+    width: 100%;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-buttons button:hover {
+    background-color: #2874a6;
+}
+@media only screen and (max-width: 1180px){
+    .contact-buttons button{
+        width: 21%;
+    }
+}
+@media only screen and (max-width: 587px){
+    .contact-buttons button{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .contact-container{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .contact-container .about{
+        width: 100%;
+    }
+    .contact-container .form-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 537px){
+    .contact-container{
+        padding: 1rem;
+    }
+    
+}
+@media only screen and (max-width: 1183px){
+    .get-in-touch-card{
+        flex-direction: column;
+        gap:0;
+    }
+    .get-in-touch-card .get-card{
+        width: 100%;
+        padding: 0;
+    }
+    .contact-buttons{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .get-in-touch-card{
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .about h2{
+        font-size: 1.2em;
+    }
+    .about p{
+        font-size: 0.8em;
+    }
+}

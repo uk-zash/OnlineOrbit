@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style/app-dev.css">
+    <title>About Us</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 1rem;
+            background-color:#00c4cc ;
+            padding: 2rem 1rem 2rem 5rem;
+    gap: 7rem;
+    align-items: center;
+        }
+        .container .about{
+            width: 45%;
+        }
+        .container .img{
+            width: 50%;
+        }
+        .container img{
+            width: 100%;
+        }
+
+        @media only screen and (max-width:1100px){
+            .container{
+                flex-direction: column;
+                gap: 1rem;
+                padding: 3rem 0rem 0rem 0rem;
+            }
+            .container .about{
+                width: 100%;
+                padding: 0rem 2rem;
+            }
+            .container .img{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <%- include('layout', { pageTitle: 'Home', enquiryNumber: 'Your Enquiry Number', phoneNumber: 'Your Phone Number' }) %>
+
+    <div class="container" >
+        <div class="about">
+            <h2>About Us: </h2>
+            <p>
+                OnlineOrbitt is a digital marketing agency which provides digital services to all types of businesses. Our team members are experts and experienced in their domain. We create websites and IOS apps related to customers' requirements to grow their business globally. Our team also handles Social Media platforms to engage audiences and, generate leads, and retarget them. 
+            </p> <p>
+
+Nowadays, where things are thing moving online, any business should have an online presence. It's essential to present Businesses on online platforms due to the market demands and competition. the things which make business possible for the entire customer journey are all kinds of online marketing digitally.
+</p><p>
+Plus, digital media is cheaper to produce than print or other mediums and can reach a much wider audience.
+So the OnlineOrbitt team are available 24/7 to help you and answer your questions.
+            </p>
+        </div>
+        <div class="img" >
+            <img src="/img/abouttt.png" alt="about">
+        </div>
+    </div>
+    <div class="social-icons">
+        <a href="https://whatsapp.com/channel/0029VaLiRFzA89MnjT9O7A0d" target="_blank"><img src="/img/whatsapp.png"
+                alt="Social Media 1"></a>
+        <a href="https://t.me/OnlineOrbitt" target="_blank"><img src="/img/telegram.png"
+                alt="Social Media 2"></a>
+        <a href="https://www.facebook.com/profile.php?id=61555483784827" target="_blank"><img src="/img/facebook.png"
+                alt="Social Media 3"></a>
+        <a href="https://www.instagram.com/onlineorbitt/" target="_blank"><img src="/img/instagram.png"
+                alt="Social Media 3"></a>
+    </div>
+
+
+
+
+
+    <%- include('footer') %>
+
+    <script src="/scripts/contact.js"></script>
+
+
+
+</body>
+</html>

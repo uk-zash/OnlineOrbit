@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/style/home.css">
+  <title>OnlineOrbitt</title>
+ 
+  
+</head>
+<body>
+    <%- include('layout', { pageTitle: 'Home', enquiryNumber: 'Your Enquiry Number', phoneNumber: 'Your Phone Number' }) %>
+
+
+    <!-- home.ejs -->
+
+<main>
+  <!-- Image Slider -->
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="img mySlides fade">
+    <img src="/img/bg2.jpg" style="width:100% ; position: relative;">
+    <div class=" write text"></div>
+  </div>
+
+  <div class="img mySlides fade">
+
+    <img src="/img/img2.jpg" style="width:100%; position: relative;">
+    <!-- <div class=" write text">Web Development</div> -->
+  </div>
+
+  <div class="img mySlides fade">
+   
+    <img src="/img/img15.jpg" style="width:100%; position: relative;">
+    <!-- <div class="write text">App Development</div> -->
+  </div>
+
+  <!-- Next and previous buttons -->
+  <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+</div>
+  <!-- Your other page content goes here -->
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card" onclick="rotateCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="/img/appp.png" alt="">
+          <h2>App Development</h2>
+          <p>Expert App Development Services Transforming Ideas into Reality!"</p>
+        </div>
+        <div class="card-back">
+          <h2>Services</h2>
+          <p><ul>
+            <li>Grocery Application</li>
+            <li>Delivery Application</li>
+            <li>Restaurant Application</li>
+            <li>Online Booking platforms</li>
+            <li>Many more</li>
+          </ul></p>
+        </div>
+      </div>
+    </div>
+    <div class="card" onclick="rotateCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="/img/webbb.png" alt="">
+          <h2>Web Development</h2>
+          <p>Cutting-edge Website Development for a Digital Future of Success and Impact!</p>
+        </div>
+        <div class="card-back">
+          <h2>Services</h2>
+          <p><ul>
+            <li>Custom Webiste Design</li>
+            <li>WordPress Website Design</li>
+            <li>eCommerce Web Design</li>
+            <li>Web Hosting</li>
+            <li>Many More</li>
+            
+          </ul></p>
+        </div>
+      </div>
+    </div>
+    <div class="card" onclick="rotateCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="/img/diggg.png" alt="">
+          <h2>Digital Marketing</h2>
+          <p>Proven Strategies, Targeted Campaigns, and Data-Driven Excellence in Dynamic Digital Marketing Solutions!</p>
+        </div>
+        <div class="card-back">
+          <h2>Services</h2>
+          <p><ul>
+            <li>Search Engine Optimization (SEO)</li>
+            <li>Local SEO</li>
+            <li>Technical SEO</li>
+            <li>Digital Marketing Strategy</li>
+            <li>Many more</li>
+          </ul></p>
+        </div>
+      </div>
+    </div>
+    <div class="card" onclick="rotateCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="/img/oth.png" alt="">
+          <h2>Other Services</h2>
+          <p>Let's collab to make your buissness successful digitally!</p>
+        </div>
+        <div class="card-back">
+          <h2>Services</h2>
+          <p><ul>
+            <li>Social Media Management</li>
+            <li>Social Media Advertising</li>
+            <li>Social Media Reels</li>
+            <li>Poster Making and Logo Design</li>
+            <li>Many more</li>
+          </ul></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    
+
+    <!-- Card 3 -->
+    
+    
+  </div>
+
+
+
+  <div class="work">
+    <img src="/img/img14.jpg" alt="Image">
+    <div class="aboutO">
+      <h2>Boost Your Ideas and Businesses-OnlineOrbitt</h2>
+      <p >
+        In today's digital world, a powerful online presence is important. It's time to change your traditional business into Digital mode. Here"OnlineOrbitt" is a Digital Marketing agency which provides lots of services Including Social Media Marketing, Advertising and Brand Management, Website Development, App Development, Graphic design etc.</p>
+        <p> Our team is an expert in to rise your all types of businesses like Shops, Medical, Restaurants as well Real estate businesses etc. at the climax.
+        We are skilled and experienced in solving your problems related to Digital Services.OnlineOrbitt is available 24/7 to answer your questions.</p>
+    </div>
+  </div>
+  <div class="work">
+   
+    <div class="aboutO">
+      <h2>What make client to choose us ?</h2>
+      <p >The needs of our clients are the most important for OnlineOrbitt. During the work, our team get connected to the clients ensuring them that they are not alone. our team stands with them as a partner and supporter. </p>
+        <p>Satisfying our customers with good work is one of the most important purposes of our team.
+
+        It's a crucial decision to choose the right partner for your business. We "Onlineorbitt" are dedicated to serving you Digital Services and contributing to the prosperity of your business.</p>
+    </div>
+    <img src="/img/img10.jpg" alt="Image">
+  </div>
+  <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <div style="display: flex; gap: 4px;">
+      <h3>1. </h3><h3> What services does OnlineOrbitt offer?</h3>
+    </div>
+      <p class="answer">OnlineOrbitt provides a range of services including website development, application development, logo design, and comprehensive digital marketing solutions.
+      </p>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <div style="display: flex; gap: 4px;">
+      <h3>2. </h3> <h3>How experienced is your team?</h3>
+    </div>
+      <p class="answer">Our team consists of highly experienced professionals with a proven track record in web development, design, and digital marketing. We bring years of expertise to every project.</p>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <div style="display: flex; gap: 4px;">
+      <h3>3. </h3> <h3>How long does it take to complete a website or application project?</h3>
+    </div>
+      <p class="answer">The timeline varies based on the complexity and scope of the project. We work closely with clients to establish realistic timelines and ensure timely delivery.</p>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <div style="display: flex; gap: 4px;">
+      <h3>4.</h3> <h3> Do you provide ongoing support after the project is completed?
+
+      </h3>
+    </div>
+      <p class="answer">Yes, we offer ongoing support and maintenance services to ensure your website or application continues to function smoothly. Our team is here to assist with any updates or issues.</p>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <div style="display: flex; gap: 4px;">
+      <h3>5.</h3>  <h3> How do you approach logo design?
+      </div>
+      </h3>
+      <p class="answer">Our logo design process involves a thorough understanding of your brand, values, and target audience. We work collaboratively with clients to create a logo that aligns perfectly with their identity.</p>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <div style="display: flex; gap: 4px;">
+      <h3>6.</h3>  <h3> How can I get started with OnlineOrbitt?
+
+      </h3>
+    </div>
+      <p class="answer">Getting started is easy! Simply reach out to us through our contact page, and one of our team members will connect with you to discuss your project and provide guidance on the next steps.</p>
+    </div>
+
+    <!-- Add more FAQ items as needed -->
+
+  </div>
+  <!-- Add this section after the existing content in your <main> -->
+    <div class="review-container">
+      <div class="reviews">
+        <div class="review" style="display: flex; flex-direction: column;">
+         <p> "Online Orbitt nailed it! They built us a sleek website, a standout logo, and their digital marketing strategies are driving results. Professional, creative, and highly recommended!" - <br> <span style="color: white;"> Zishan Ahmad Khan ( Founder of ZFM foundation ) </span>
+        </p>
+         ⭐⭐⭐⭐⭐
+
+        </div>
+      <div class="review" style="display: flex; flex-direction: column;">
+          <p> "Online Orbitt is a game-changer! They seamlessly integrated creativity and functionality. Their digital marketing strategies have substantially increased our visibility. Highly skilled professionals!" - <br> <span style="color: white;">Jeetendra Kumar </span> 
+         </p>
+          ⭐⭐⭐⭐⭐</div>
+       <div class="review" style="display: flex; flex-direction: column;">
+          <p> "Exceptional work from Online Orbitt! Our website, app, and logo look amazing. Their digital marketing has boosted our online presence. A one-stop solution for any business!" - <br><span style="color: white;">Sohaib Islahi IIMC (Journalist)</span>
+         </p>
+          ⭐⭐⭐⭐⭐</div>
+       <div class="review" style="display: flex; flex-direction: column;">
+          <p> "Thrilled with Online Orbitt's services! Visually appealing website, robust app, and standout logo. Their digital marketing expanded our reach. A reliable partner for your digital needs!" - <br> <span style="color: white;"> Farhan Ahmad JNU</span>
+         </p>
+          ⭐⭐⭐⭐⭐</div>
+        <!-- Add more reviews as needed -->
+      </div>
+    </div>
+
+</main>
+<section>
+
+  <div class="social-icons">
+    <a href="https://whatsapp.com/channel/0029VaLiRFzA89MnjT9O7A0d" target="_blank"><img src="/img/whatsapp.png"
+            alt="Social Media 1"></a>
+    <a href="https://t.me/OnlineOrbitt" target="_blank"><img src="/img/telegram.png"
+            alt="Social Media 2"></a>
+    <a href="https://www.facebook.com/profile.php?id=61555483784827" target="_blank"><img src="/img/facebook.png"
+            alt="Social Media 3"></a>
+    <a href="https://www.instagram.com/onlineorbitt/" target="_blank"><img src="/img/instagram.png"
+            alt="Social Media 3"></a>
+</div>
+
+
+<%- include('footer') %>
+
+
+    <script src="/scripts/slider.js"></script>
+    
+    <script>
+      function flipCard(card) {
+        card.classList.toggle('is-flipped');
+      }
+    </script>
+    <script>
+      function toggleAnswer(faqItem) {
+        const answer = faqItem.querySelector('.answer');
+        answer.classList.toggle('show-answer');
+      }
+    </script>
+</body>
+</html>
