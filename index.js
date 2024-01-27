@@ -67,7 +67,7 @@ app.get('/privacy', (req, res) => {
     const blogg = await blog.findById(req.params.id);
     const comments = await Comment.find({ blogId: req.params.id})
     // console.log(blogg)
-    console.log(comments)
+    // console.log(comments)
     return res.render('blog-view' ,{
         blogg,
         comments
@@ -108,12 +108,12 @@ app.get('/aboutus', (req, res) => {
       };
   
       const clientData = await message.insertMany(data);
-      console.log("Data saved to database:", clientData);
+      // console.log("Data saved to database:", clientData);
   
       // Send success response after both email and database operations
       res.render("home");
     } catch (error) {
-      console.error("Error sending email:", error);
+      // console.error("Error sending email:", error);
       res.status(500).send("error");
     }
   });
@@ -121,5 +121,5 @@ app.get('/aboutus', (req, res) => {
 
 
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+  // console.log(`Server is running at http://localhost:${port}`);
 });
