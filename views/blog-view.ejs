@@ -4,84 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/style/app-dev.css">
+    <link rel="stylesheet" href="/public/style/blog-view.css">
     <title>Blog</title>
 </head>
-<style>
-    .container h3{
-        display: flex;
-    justify-content: center;
-    /* padding: 2rem 2rem 1rem 2rem; */
-    border-bottom: 2px solid black;
-    }
-    .container img{
-        min-width: 50%;
-        margin: 3rem 1rem 0rem 3rem;
-    display: block;
-    }
-    .container pre{
-        white-space: pre-line;
-        padding: 2rem 2rem;
-    }
-    .container p{
-        padding: 2rem;
-    }
-    .container h3{
-        padding: 2rem 1rem 1rem 1rem;
-    }
-    .comments pre{
-        padding: 1rem 1rem;
-    }
-    
-    @media only screen and (max-width:590px){
-        .container img{width: 50%;}
-        
-    }
-    
-.content {
-    padding: 20px;
-    margin-right: 100px; /* Adjust margin-right based on the width of your social icons */
-  }
-  
-  .social-icons {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .social-icons a {
-    margin-bottom: 10px;
-    text-decoration: none;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .social-icons a:hover {
-    opacity: 0.4;
-    /* transform: scale(2); */
-  }
-  
-  .social-icons img {
-    width: 40px; /* Adjust the width of your social icons */
-    height: auto;
-  }
-     /*
-    @media only screen and (max-width:670px){
-        .container img{width: 60vh;}
-        
-    }
-    @media only screen and (max-width:440px){
-        .container img{width: 34vh;}
-        
-    }
-    @media only screen and (max-width:357px){
-        .container img{width: 33vh;}
-        
-    } */
-    
-</style>
+
 <body>
     <%- include('layout', { pageTitle: 'Home', enquiryNumber: 'Your Enquiry Number', phoneNumber: 'Your Phone Number' }) %>
 
@@ -119,6 +45,6 @@
     </div>
       
     <%- include('footer') %>
-
+    <script src="/scripts/inspect.js"></script>
 </body>
 </html>

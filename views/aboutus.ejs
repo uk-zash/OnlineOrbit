@@ -4,41 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/style/app-dev.css">
+    <link rel="stylesheet" href="/public/style/about.css">
     <title>About Us</title>
-    <style>
-        .container {
-            display: flex;
-            gap: 1rem;
-            background-color:#00c4cc ;
-            padding: 2rem 1rem 2rem 5rem;
-    gap: 7rem;
-    align-items: center;
-        }
-        .container .about{
-            width: 45%;
-        }
-        .container .img{
-            width: 50%;
-        }
-        .container img{
-            width: 100%;
-        }
-
-        @media only screen and (max-width:1100px){
-            .container{
-                flex-direction: column;
-                gap: 1rem;
-                padding: 3rem 0rem 0rem 0rem;
-            }
-            .container .about{
-                width: 100%;
-                padding: 0rem 2rem;
-            }
-            .container .img{
-                width: 100%;
-            }
-        }
-    </style>
+   
 </head>
 <body>
     <%- include('layout', { pageTitle: 'Home', enquiryNumber: 'Your Enquiry Number', phoneNumber: 'Your Phone Number' }) %>
@@ -77,6 +45,7 @@ So the OnlineOrbitt team are available 24/7 to help you and answer your question
     <%- include('footer') %>
 
     <script src="/scripts/contact.js"></script>
+    <script src="/scripts/inspect.js"></script>
 
 
 

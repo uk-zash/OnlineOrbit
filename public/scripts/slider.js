@@ -93,3 +93,12 @@ document.addEventListener("DOMContentLoaded", function() {
       card.classList.toggle('is-flipped');
     }
   });
+
+  function flipCard(card) {
+    card.classList.toggle('is-flipped');
+  }
+
+  function toggleAnswer(faqItem) {
+    const answer = faqItem.querySelector('.answer');
+    answer.classList.toggle('show-answer');
+  }
