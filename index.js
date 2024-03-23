@@ -3,13 +3,12 @@ const app = express();
 const path = require("path");
 require("dotenv").config()
 
-const port =  process.env.port;
+const PORT =  process.env.PORT || 3000;
 const multer = require("multer")
 const message = require("./config");
 const { Collection } = require('mongoose');
 const nodemailer = require("nodemailer");
 const blog = require("./blog");
-const Blog = require('./blog');
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.set('view engine', 'ejs');
@@ -45,7 +44,7 @@ app.get('/privacy', (req, res) => {
     res.render('privacy');
   });
 
-  const storage = multer.diskStorage({
+const storage = multer.diskStorage({
     destination: function(req , file , cb){
       cb(null , path.resolve(`./public/upload/`))
     },
@@ -118,8 +117,8 @@ app.get('/aboutus', (req, res) => {
     }
   });
 
+console.log(process.env.my_name);
 
-
-app.listen(3000, () => {
-  console.log(`Server is running at http://localhost:3000`);
+app.listen(PORT, () => {
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
