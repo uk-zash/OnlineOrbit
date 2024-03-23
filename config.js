@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const connect = mongoose.connect("mongodb+srv://onlineorbitt:Ti37yGR35w4nKVJA@cluster0.10uvucz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+const connect = mongoose.connect("mongodb+srv://doadmin:y64TVe28Ab9157Hv@onlineorbitt-01353bee.mongo.ondigitalocean.com/admin?authSource=admin&tls=true")
 
 connect.then(()=>{
     // console.log("Database Connecctedd")
